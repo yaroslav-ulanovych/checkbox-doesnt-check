@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.ListView;
 
 public class MainActivity extends Activity {
@@ -23,7 +24,7 @@ public class MainActivity extends Activity {
 
                 View view = inflater.inflate(R.layout.item, null);
 
-                View checkBox = view.findViewById(R.id.checkbox);
+                CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkbox);
 
                 checkBox.setSelected(true);
 
